@@ -153,7 +153,6 @@ When creating applications that span multiple Kubernetes clusters, a Global DNS 
 
 For more information on how to use this feature, see [Global DNS]({{< baseurl >}}/rancher/v2.x/en/admin-settings/globaldns/).
 
-
 ## Chart Compatibility with Rancher
 
 Charts now support a field called `rancher_min_version` and `rancher_max_version` in the [`questions.yml` file](https://github.com/rancher/integration-test-charts/blob/master/charts/chartmuseum/v1.6.0/questions.yml) to specify the versions of Rancher that the chart is compatible with. When using the UI, only app versions that are valid for the version of Rancher running will be shown. API validation is done to ensure apps that don't meet the Rancher requirements cannot be launched. An app that is already running will not be affected on a Rancher upgrade if the newer Rancher version does not meet the app's requirements.
