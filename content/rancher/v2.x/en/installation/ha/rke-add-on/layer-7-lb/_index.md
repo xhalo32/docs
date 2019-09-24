@@ -74,7 +74,7 @@ We have example configurations for the following load balancers:
 
 Choose a fully qualified domain name (FQDN) that you want to use to access Rancher (e.g., `rancher.yourdomain.com`).<br/><br/>
 
-1. Log into your DNS server a create a `DNS A` record that points to the IP address of your [load balancer](#2-configure-load-balancer).
+1. Log into your DNS server and create a `DNS A` record that points to the IP address of your [load balancer](#2-configure-load-balancer).
 
 2. Validate that the `DNS A` is working correctly. Run the following command from any terminal, replacing `HOSTNAME.DOMAIN.COM` with your chosen FQDN:
 
@@ -125,7 +125,7 @@ RKE uses a YAML config file to install and configure your Kubernetes cluster. Th
 
 ## 6. Configure Nodes
 
-Once you have the `rancher-cluster.yml` config file template, edit the nodes section to point toward your Linux hosts.
+Once you have the `rancher-cluster.yml` config file template, edit the `nodes` section to point toward your Linux hosts.
 
 1. Open `rancher-cluster.yml` in your favorite text editor.
 
